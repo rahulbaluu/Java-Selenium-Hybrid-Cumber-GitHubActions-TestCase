@@ -32,7 +32,7 @@ public class ExcelUtils {
 	}
 
 	public static Map<String, String> getRowData(String sheetName, int rowNumber) throws IOException {
-		FileInputStream file = new FileInputStream("src/test/resources/testExcel/SignupRegistrationDetail.xlsx");
+		FileInputStream file = new FileInputStream("src/test/resources/TestExcel/SignupRegistrationDetail.xlsx");
 		Workbook workbook = new XSSFWorkbook(file);
 		Sheet sheet = workbook.getSheet(sheetName);
 
