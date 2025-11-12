@@ -1,0 +1,67 @@
+package flows;
+
+import Base.BaseSetup;
+import constant.SignupLoginPageConstant;
+import constant.WaitTimeConstant;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+import java.util.Objects;
+
+public class SignupLoginFlow extends BaseSetup {
+	public SignupLoginFlow(WebDriver driver) {
+		super(driver);
+	}
+
+	public void verifyLoginSignupPageVisible() {
+		System.out.println(driver.getTitle());
+		if (Objects.equals(driver.getTitle(), "Automation Exercise - Signup / Login")) {
+			System.out.println("Login/Signup Page Visible Successfully");
+		} else {
+			System.out.println("Login/Signup Page Not Visible");
+		}
+	}
+
+	public void enterTheNameEmailInSignupTextBox(String username, String email) {
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.signupUserName)).sendKeys(username);
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.signupEmail)).sendKeys(email);
+	}
+
+	public void clickSignupButton() {
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.signupButton)).click();
+	}
+
+	public void enterTheEmailAndPasswordInLoginTextBox(String email, String password) {
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.loginEmail)).sendKeys(email);
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.loginPassword)).sendKeys(password);
+	}
+
+	public void enterTheIncorrectEmailAndPasswordInLoginTextBox(String email, String password) {
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.loginEmail)).sendKeys(email);
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.loginPassword)).sendKeys(password);
+	}
+
+	public String getErrorMessage() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
+		WebElement errorMessageElement = wait.until(
+				ExpectedConditions.visibilityOfElementLocated(
+						By.xpath(SignupLoginPageConstant.loginErrorMessageElement)));
+		return errorMessageElement.getText();
+	}
+
+	public String getErrorMessageSignup() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitTimeConstant.waitTime));
+		WebElement errorMessageElement = wait.until(
+				ExpectedConditions.visibilityOfElementLocated(
+						By.xpath(SignupLoginPageConstant.existingLoginEmailErrorMessageElement)));
+		return errorMessageElement.getText();
+	}
+
+	public void clickLoginButton() {
+		driver.findElement(By.cssSelector(SignupLoginPageConstant.loginButton)).click();
+	}
+}

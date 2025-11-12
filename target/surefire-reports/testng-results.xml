@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="15" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-12T00:37:14 GMT" name="Surefire suite" finished-at="2025-11-12T00:39:50 GMT" duration-ms="155689">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-11-12T00:37:14 GMT" name="Surefire test" finished-at="2025-11-12T00:39:50 GMT" duration-ms="155689">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:37:14 GMT" name="setUpClass" finished-at="2025-11-12T00:37:14 GMT" duration-ms="496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@54ddd7e4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:37:14 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:37:30 GMT" duration-ms="15515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Subscription in Cart page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing the functions in cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:37:30 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:37:38 GMT" duration-ms="8596" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add Products in Cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing the functions in cart"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a data-product-id="1" class="btn btn-default add-to-cart">...</a> is not clickable at point (385, 16). Other element would receive the click: <a data-product-id="1" class="btn btn-default add-to-cart">...</a>
+  (Session info: chrome=142.0.7444.135)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [448a534620cbf4f248273034af45c33d, clickElement {id=f.FE0B6CD63EDBEED1E844EABB28A6FF35.d.31AC7DB7D957E3DAE94B110B73E262DA.e.321}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51278}, goog:processID: 73582, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51278/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (448a534620cbf4f248273034af45c33d)] -> link text: Add to cart]
+Session ID: 448a534620cbf4f248273034af45c33d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a data-product-id="1" class="btn btn-default add-to-cart">...</a> is not clickable at point (385, 16). Other element would receive the click: <a data-product-id="1" class="btn btn-default add-to-cart">...</a>
+  (Session info: chrome=142.0.7444.135)
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [448a534620cbf4f248273034af45c33d, clickElement {id=f.FE0B6CD63EDBEED1E844EABB28A6FF35.d.31AC7DB7D957E3DAE94B110B73E262DA.e.321}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: /var/folders/fq/g0kvv0p944x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51278}, goog:processID: 73582, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51278/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (448a534620cbf4f248273034af45c33d)] -> link text: Add to cart]
+Session ID: 448a534620cbf4f248273034af45c33d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at flows.CartFlow.hoverOverFirstProductAddToCart(CartFlow.java:75)
+at stepDefenition.CartStepDef.hoverOverFirstProductAndClickAddToCart(CartStepDef.java:51)
+at ✽.Hover over first product and click add to cart(file:///Users/rahulbalashanmugam/eclipse-workspace/Learning/Hybrid-Test-Case-2-Register-User/src/test/java/features/cart.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:37:38 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:37:44 GMT" duration-ms="5832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Product quantity in Cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing the functions in cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:37:44 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:38:02 GMT" duration-ms="17625" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Remove Products From Cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing the functions in cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:38:02 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:38:10 GMT" duration-ms="7556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login and Logout with credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login and Logout the existing account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:38:10 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:38:16 GMT" duration-ms="6018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login User with incorrect email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login and Logout the existing account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:38:16 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:38:22 GMT" duration-ms="6651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify All Products and product detail page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Listing and Searching of Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:38:22 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:38:29 GMT" duration-ms="6650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify searched product is listed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Listing and Searching of Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:38:29 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:38:35 GMT" duration-ms="5993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify searched product is listed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Listing and Searching of Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:38:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:38:41 GMT" duration-ms="6324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify searched product is listed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Listing and Searching of Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:38:41 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:38:50 GMT" duration-ms="8368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify navigation to different category and sub-category pages"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Listing and Searching of Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:38:50 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:39:01 GMT" duration-ms="11234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registering the new user and delete the created user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create, Verify and Delete the created account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:39:01 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:39:11 GMT" duration-ms="10172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registering the new user and delete the created user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create, Verify and Delete the created account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:39:11 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:39:16 GMT" duration-ms="5540" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register User with existing email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create, Verify and Delete the created account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:39:16 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:39:33 GMT" duration-ms="16693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place Order Register while Checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create, Verify and Delete the created account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:39:33 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-12T00:39:49 GMT" duration-ms="16299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place Order Register while Checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create, Verify and Delete the created account"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@50b472aa]" started-at="2025-11-12T00:39:49 GMT" name="tearDownClass" finished-at="2025-11-12T00:39:50 GMT" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
