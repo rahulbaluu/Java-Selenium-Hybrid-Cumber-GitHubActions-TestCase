@@ -35,7 +35,7 @@ Feature: Listing and Searching of Product
 
     Examples:
       | mainCategory | subCategory | expectedCategoryText   | subCategory2 | mainCategory2 | expectedCategoryText2 |
-      | Women        | Tops        | WOMEN -  Tops Products | Jeans        | Men           | MEN - Jeans PRODUCTS |
+      | Women        | Tops        | WOMEN -  Tops Products | Jeans        | Men           | MEN -  Jeans PRODUCTS |
 
 
 
